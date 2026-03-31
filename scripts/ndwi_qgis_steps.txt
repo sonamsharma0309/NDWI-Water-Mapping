@@ -1,0 +1,10 @@
+1. Load Sentinel-2 Bands (B3 & B8)
+2. Clip raster using AOI shapefile
+3. Raster Calculator:
+   (B3 - B8) / (B3 + B8)
+4. Reclassify:
+   NDWI > 0 → Water
+5. Polygonize raster
+6. Calculate area:
+   area($geometry)/1000000
+7. Create map layout
